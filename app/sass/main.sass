@@ -1,0 +1,127 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	background-color: #fff
+	color: $accent
+
+.uppercase
+	text-transform: uppercase
+
+.top-nav, .footer
+	margin: 0 3%
+
+.top-nav
+	display: flex
+	justify-content: center
+	position: fixed
+	top: 0
+	left: 0
+	width: 94%
+	height: 10%
+	min-height: 70px
+	font-size: 24px
+	text-align: center
+	border-bottom: 1px solid $accent
+	z-index: 10
+	a
+		display: inline-block
+		margin: auto 15px
+		text-decoration: none
+		color: $accent
+		transition: color .2s ease
+		&:hover
+			color: $dark
+
+section
+	position: relative
+	height: 100vh
+	min-height: 700px
+	background-size: cover
+	background-position: center
+	padding: 110px 0
+	.scroll
+		position: absolute
+		bottom: 5%
+		width: 100%
+		text-align: center
+		font-size: 18px
+		font-weight: bold
+		letter-spacing: 2px
+		.fa
+			// content: "\f103"
+			// font-family: fontawesome
+			display: block
+			height: 40px
+			width: 40px
+			margin: 0 auto
+			font-size: 40px
+			font-weight: normal
+			line-height: 40px
+			transition: color .2s ease
+			&:hover
+				color: $gray
+
+.s
+	&-home
+		.home
+			display: flex
+			height: 100%
+			width: 100%
+			&-content
+				margin: auto
+				text-align: center
+				img
+					// width: 500px
+					height: 50vh
+					max-width: 100%
+					min-height: 200px
+				.home-title
+					font-size: 60px
+					margin-top: 10px
+					span
+						font-weight: normal
+
+
+
+
+// .img-responsive
+// 	display: block
+// 	
+// 	height: auto
+
+@import "media" // Всегда в конце
