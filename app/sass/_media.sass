@@ -4,31 +4,43 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
-
+	.title
+		font-size: 50px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	.top-nav
-		font-size: 20px
-		a
-			margin: auto 9px
-	
+	.s
+		&-about
+			height: auto
+		// height: 100%
 	section
 		.scroll
 			font-size: 14px
 
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+
+	.top-nav
+		font-size: 20px
+		a
+			margin: auto 9px
+
+	.title
+		font-size: 38px
+
 	.s
-		&-home
-			.home
-				&-content
-					.home-title
+		&-about
+			.about
+				&-image
+					width: 90%
+					margin: 20px auto
+		&-contact
+			.contact
+				&-data
+					&-tel
 						font-size: 38px
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)

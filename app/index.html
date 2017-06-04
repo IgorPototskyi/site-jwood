@@ -11,7 +11,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
 	
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
@@ -39,11 +39,14 @@
 				<div class="title home-title uppercase"><span>jwood</span>photography</div>
 			</div>
 
-			<div class="scroll uppercase">scroll down to see more<i class="fa fa-angle-double-down"></i></div>
+			<div class="scroll uppercase">
+				scroll down to see more
+				<a href="#about"><i class="fa fa-angle-double-down"></i></a>
+			</div>
 		</div>
 	</section>
 
-	<section class="s-about">
+	<section class="s-about" id="about">
 		<div class="about">
 			<div class="about-image">
 				<img class="img-responsive" src="img/jwood.jpg" alt="jwood">
@@ -56,7 +59,51 @@
 			</div>
 		</div>
 
-		<div class="scroll uppercase">keep scrolling, there is still more to come.<i class="fa fa-angle-double-down inverse"></i></div>
+		<div class="scroll uppercase">
+			keep scrolling, there is still more to come.
+			<a href="#portfolio" class="inverse"><i class="fa fa-angle-double-down"></i></a>
+		</div>
+	</section>
+
+	<section class="s-portfolio" id="portfolio" style="background-image: url(img/bg-portfolio.jpg)">
+		<div class="portfolio">
+			<div class="title portfolio-title uppercase">portfolio</div>
+			<div class="portfolio-photos">
+				<div class="photo"><img src="img/photos/photo1.jpg" alt="jwood"></div>
+				<div class="photo"><img src="img/photos/photo2.jpg" alt="jwood"></div>
+				<div class="photo"><img src="img/photos/photo3.jpg" alt="jwood"></div>
+				<div class="photo"><img src="img/photos/photo4.jpg" alt="jwood"></div>
+				<div class="photo"><img src="img/photos/photo5.jpg" alt="jwood"></div>
+				<div class="photo"><img src="img/photos/photo6.jpg" alt="jwood"></div>
+				<div class="photo"><img src="img/photos/photo7.jpg" alt="jwood"></div>
+				<div class="photo"><img src="img/photos/photo8.jpg" alt="jwood"></div>
+				<div class="photo"><img src="img/photos/photo9.jpg" alt="jwood"></div>
+				<div class="photo"><img src="img/photos/photo10.jpg" alt="jwood"></div>
+			</div>
+		</div>
+
+		<div class="scroll uppercase">
+			do you want to see it with yout own eyes? scroll!
+			<a href="#contact"><i class="fa fa-angle-double-down"></i></a>
+		</div>
+	</section>
+
+	<section class="s-contact" id="contact">
+		<div class="contact">
+			<div class="contact-data uppercase">
+				<div class="contact-data-descr">mail:</div>
+				<div class="contact-data-mail title"><a href="mail:jason@wood.com">jason@wood.com</a></div>
+				<div class="contact-data-descr">phone:</div>
+				<div class="contact-data-tel"><a href="tel:4444444444">+44 444 444 444</a></div>
+				<div class="contact-data-descr">social media:</div>
+				<div class="contact-data-links">
+					<a href="http://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="http://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+		<footer class="footer uppercase"><span>designed by pavel szymankiewich</span></footer>
 	</section>
 	
 	<link rel="stylesheet" href="css/main.min.css">

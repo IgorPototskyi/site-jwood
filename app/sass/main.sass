@@ -52,8 +52,8 @@ body
 	top: 0
 	left: 0
 	width: 94%
-	height: 10%
-	min-height: 70px
+	height: 10vh
+	min-height: 50px
 	font-size: 24px
 	text-align: center
 	border-bottom: 1px solid $accent
@@ -65,7 +65,7 @@ body
 		color: $accent
 		transition: color .2s ease
 		&:hover
-			color: $dark
+			color: $hover
 
 section
 	position: relative
@@ -73,18 +73,20 @@ section
 	min-height: 700px
 	background-size: cover
 	background-position: center
-	padding: 110px 0
+	padding:
+		top: 11vh
+		bottom: 120px
 	.scroll
 		position: absolute
-		bottom: 3%
+		bottom: 25px
 		width: 100%
 		text-align: center
 		font-size: 18px
 		font-weight: bold
 		letter-spacing: 2px
-		.fa
-			// content: "\f103"
-			// font-family: fontawesome
+		a
+			text-decoration: none
+			color: $accent
 			display: block
 			height: 40px
 			width: 40px
@@ -94,10 +96,11 @@ section
 			line-height: 40px
 			transition: color .2s ease
 			&:hover
-				color: $dark
+				color: $hover
 			&.inverse
+				color: $dark
 				&:hover
-					color: $accent
+					color: $hover
 
 .title
 	font-size: 60px
@@ -116,31 +119,107 @@ section
 					// width: 500px
 					height: 50vh
 					max-width: 100%
-					min-height: 200px
+					min-height: 300px
 				.home-title
 					margin-top: 10px
 					span
 						font-weight: bold
 	&-about
 		color: $dark
+		display: flex
 		.about
-			width: 84%
-			height: 100%
-			margin: 0 8%
-			display: flex
-			flex-direction: row
-    		flex-wrap: wrap
-    		justify-content: space-between
-			align-items: center
+			width: 90%
+			// height: 100%
+			margin: auto 5%
 			&-image
-				// width: 50%
-			
+				width: 50%
+				height: auto
+				max-width: 650px
+				max-height: 100%
+				float: left
+				margin-right: 30px
+				margin-bottom: 20px
 			&-text
-				// width: 50%
-				margin-left: 20px
-				
+				font-family: opensans, sans-serif
+				// overflow: hidden
+				p
+					font-size: 20px
+				&-name
+					font-family: felttip
+					font-size: 36px
+	&-portfolio
+		height: auto
+		.portfolio
+			width: 100%
+			height: 100%
+			&-title
+				width: 100%
+				text-align: center
+				margin: 50px 0
+			&-photos
+				width: 90%
+				// max-width: 1700px
+				margin: 0 auto
+				text-align: center
+				display: flex
+				flex-flow: row wrap
+				justify-content: space-around
+				// align-content: space-between
+				img
+					width: 279px
+    				height: 250px
+					margin: 20px
+					transition: transform ease-in .3s
+					&:hover
+						transform: scale(1.1)
+	&-contact
+		color: $dark
+		.contact
+			display: flex
+			width: 100%
+			height: 100%
+			text-align: center
+			&-data
+				margin: auto
+				a
+					text-decoration: none
+					color: $dark
+				&-descr
+					font-size: 30px
+					font-weight: bold
+				&-tel
+					font-size: 48px
+				&-links
+					a
+						display: inline-block
+						width: 50px
+						height: 50px
+						border: 1px solid $dark
+						border-radius: 25px
+						line-height: 50px
+						font-size: 30px
+						margin: 0 5px
+						&:hover
+							background-color: $accent
 
-				
+		.footer
+			display: flex
+			justify-content: center
+			position: absolute
+			bottom: 0
+			width: 94%
+			height: 10vh
+			min-height: 50px
+			font-size: 18px
+			color: $accent
+			border-top: 1px solid $accent
+			span
+				margin: auto
+
+
+
+		
+					
 
 
 
