@@ -1,1 +1,1 @@
-https://igorpototskyi.github.io/site-jwood/
+https://igorpototskyi.github.io/site-jwood/dist/
