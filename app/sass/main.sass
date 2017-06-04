@@ -42,6 +42,34 @@ body
 .uppercase
 	text-transform: uppercase
 
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.preloader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	&-inner
+		background-image: url("../img/loader.gif")
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
 .top-nav, .footer
 	margin: 0 3%
 
@@ -201,7 +229,6 @@ section
 						margin: 0 5px
 						&:hover
 							background-color: $accent
-
 		.footer
 			display: flex
 			justify-content: center
@@ -215,17 +242,5 @@ section
 			border-top: 1px solid $accent
 			span
 				margin: auto
-
-
-
-		
-					
-
-
-
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
 
 @import "media" // Всегда в конце
