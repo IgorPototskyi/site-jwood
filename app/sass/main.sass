@@ -30,7 +30,6 @@ html, body
 
 body
 	font-size: 16px
-	min-width: 480px
 	position: relative
 	line-height: 1.75
 	font-family: $default-font
@@ -70,80 +69,86 @@ body
 		top: 50%
 		position: absolute
 
-.top-nav, .footer
-	margin: 0 3%
-
-.top-nav
-	display: flex
-	justify-content: center
-	position: fixed
-	top: 0
-	left: 0
-	width: 94%
-	height: 100px
-	font-size: 24px
+.navbar-nav
+	width: 100%
 	text-align: center
+	font-size: 24px
 	border-bottom: 1px solid $accent
-	z-index: 10
-	
-	&::before
-		content: ''
-		position: fixed
-		left: 0
-		right: 0
-		height: 100px
-		background-color: rgba(#000,.1)
-		filter: blur(3px)
-		z-index: -1
-	a
+	> li
+		float: none
 		display: inline-block
-		margin: auto 15px
-		text-decoration: none
-		color: #fff
-		transition: color .2s ease
-		&:hover
-			color: $hover
+		text-transform: uppercase
+		padding: 25px 0
+		a
+			color: #fff
+			transition: color .2s ease
+			&:hover, &:active, &:focus
+				color: $light-dark
+				background-color: transparent
+
+.navbar-collapse
+	border-top: 1px solid $accent
+
+.navbar-custom
+	background-color: rgba(#000,.2)
+
+.navbar-toggle
+	border: 1px solid #fff
+	transition: all .3s ease
+	&:hover
+		background-color: $hover
+
+	span
+		background-color: #fff 	
 
 section
 	position: relative
-	height: auto
-	min-height: 700px
+	min-height: 550px
 	background-size: cover
 	background-position: center
-	padding:
-		top: 110px
+	padding: 110px 20px 0
+	&:focus
+		outline: none
 
-	.scroll
-		width: 100%
-		text-align: center
-		font-size: 18px
-		font-weight: bold
-		letter-spacing: 2px
-		padding-bottom: 25px
-		&::before
-			content: ''
-			clear: both
-			display: block
-		a
-			text-decoration: none
-			color: $accent
-			display: block
-			height: 40px
-			width: 40px
-			margin: 0 auto
-			font-size: 40px
-			font-weight: normal
-			line-height: 40px
-			transition: color .2s ease
+.scroll
+	margin: 0 auto
+	text-align: center
+	font-size: 18px
+	font-weight: bold
+	text-transform: uppercase
+	letter-spacing: 2px
+	padding-bottom: 25px
+	&::before
+		content: ''
+		clear: both
+		display: block
+	a
+		text-decoration: none
+		color: $accent
+		display: block
+		height: 40px
+		width: 40px
+		margin: 0 auto
+		font-size: 40px
+		font-weight: normal
+		line-height: 40px
+		transition: color .2s ease
+		&:hover
+			color: $hover
+		&.inverse
+			color: $dark
 			&:hover
 				color: $hover
-			&.inverse
-				color: $dark
-				&:hover
-					color: $hover
+
+.scroll-small
+	display: none
+	a
+		height: 80px
+		width: 80px
 
 .title
 	font-size: 60px
+	text-transform: uppercase
 
 .s
 	&-home
@@ -160,7 +165,8 @@ section
 					// width: 500px
 					height: 50vh
 					max-width: 100%
-					min-height: 300px
+					min-height: 250px
+					margin: 0 auto
 				.home-title
 					margin-top: 10px
 					span
@@ -169,6 +175,9 @@ section
 			position: absolute
 			bottom: 25px
 			padding-bottom: 0
+			left: 0
+			right: 0
+			text-align: center
 			
 	&-about
 		color: $dark
@@ -190,6 +199,12 @@ section
 				&-name
 					font-family: felttip
 					font-size: 36px
+		.scroll
+			a
+				color: $dark
+				&:hover
+					color: $hover
+
 	&-portfolio
 		height: auto
 		.portfolio
@@ -210,18 +225,21 @@ section
 					width: 279px
     				height: 250px
 					margin: 20px
-					transition: transform ease-in .3s
+					transition: transform .3s ease-in
 					&:hover
 						transform: scale(1.1)
+
 	&-contact
 		color: $dark
-		padding-bottom: 110px
 		height: 100vh
+		text-transform: uppercase
 		.contact
 			display: flex
+			position: relative
 			width: 100%
-			height: 100%
+			height: 90%
 			text-align: center
+			// margin: 200px 0
 			&-data
 				margin: auto
 				a
@@ -230,31 +248,26 @@ section
 				&-descr
 					font-size: 30px
 					font-weight: bold
-				&-tel
+				&-cont
 					font-size: 48px
 				&-links
-					a
-						display: inline-block
-						width: 50px
-						height: 50px
-						border: 1px solid $dark
-						border-radius: 50%
-						line-height: 50px
-						font-size: 30px
-						margin: 0 5px
+					.fa-stack
+						transition: color .3s ease
 						&:hover
-							background-color: $accent
+							color: $hover
 		.contact-footer
-			display: flex
-			justify-content: center
-			position: absolute
-			bottom: 0
-			width: 94%
-			height: 100px
+			padding-bottom: 30px
+			width: 100%
 			font-size: 18px
-			color: $accent
-			border-top: 1px solid $accent
-			span
-				margin: auto
+			color: $hover
+			text-align: center
+			&::before
+				content: ''
+				display: block
+				width: 94%
+				height: 1px
+				background: $hover
+				margin: 0 auto 30px
+
 
 @import "media"

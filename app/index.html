@@ -27,24 +27,45 @@
 <body>
 	<div class="preloader"><div class="preloader-inner"></div></div>
 
-	<nav class="top-nav uppercase">
-		<a href="#home">home</a>
-		<a href="#about">about me</a>
-		<a href="#portfolio">portfolio</a>
-		<a href="#contact">contact</a>
+	<nav class="navbar navbar-custom navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+					data-target="#top-navbar" aria-expanded="false">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="top-navbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a data-toggle="collapse" data-target=".navbar-collapse" href="#home">home</a></li>
+					<li><a data-toggle="collapse" data-target=".navbar-collapse" href="#about">about me</a></li>
+					<li><a data-toggle="collapse" data-target=".navbar-collapse" href="#portfolio">portfolio</a></li>
+					<li><a data-toggle="collapse" data-target=".navbar-collapse" href="#contact">contact</a></li>
+				</ul>
+			</div>
+		</div>
 	</nav>
 
 	<section class="s-home" id="home" style="background-image: url(img/bg-home.jpg)">
 		<div class="home">
 			<div class="home-content">
-				<img src="img/logo-tm.png" alt="logo">
-				<div class="title home-title uppercase"><span>jwood</span>photography</div>
+				<img class="img-responsive" src="img/logo-tm.png" alt="logo">
+				<div class="title home-title"><span>jwood</span>photography</div>
 			</div>
 		</div>
 
-		<footer class="scroll uppercase">
-			scroll down to see more
+		<footer class="scroll scroll-big">
+			<span>scroll down to see more</span>
 			<a href="#about"><i class="fa fa-angle-double-down"></i></a>
+		</footer>
+		<footer class="scroll scroll-small">
+			<a href="#about">
+				<span class="fa-stack fa-1x">
+					<i class="fa fa-circle-thin fa-stack-2x"></i>
+					<i class="fa fa-angle-double-down fa-stack-1x"></i>
+				</span></a>
 		</footer>
 	</section>
 
@@ -54,22 +75,29 @@
 				<img class="img-responsive" src="img/jwood.jpg" alt="jwood">
 			</div>
 			<div class="about-text">
-				<div class="title about-text-title uppercase">about me</div>
+				<div class="title about-text-title">about me</div>
 				<p>Mei te possit instructior, idque delenit qui et, dicit ludus commune vix ad. Ea modo dicam cetero mel, case disputationi at est. Ad nam adipisci dignissim posidonium, eius reque temporibus ne mea. Vero antiopam ea vim. Ei timeam electram vix. Eam at tollit erroribus, ea eum idque legere epicuri.</p>
 				<p>Sed quot legere minimum cu, ex mei fastidii mandamus intellegam, error consul ut per. Sed quot legere minimum cu, ex mei fastidii mandamus intellegam, error consul ut per.</p>
 				<div class="about-text-name">Jason Wood</div>
 			</div>
 		</div>
 
-		<footer class="scroll uppercase">
-			keep scrolling, there is still more to come.
+		<footer class="scroll scroll-big">
+			<span>keep scrolling, there is still more to come.</span>
 			<a href="#portfolio" class="inverse"><i class="fa fa-angle-double-down"></i></a>
+		</footer>
+		<footer class="scroll scroll-small">
+			<a href="#portfolio">
+				<span class="fa-stack fa-1x">
+					<i class="fa fa-circle-thin fa-stack-2x"></i>
+					<i class="fa fa-angle-double-down fa-stack-1x"></i>
+				</span></a>
 		</footer>
 	</section>
 
 	<section class="s-portfolio" id="portfolio" style="background-image: url(img/bg-portfolio.jpg)">
 		<div class="portfolio">
-			<div class="title portfolio-title uppercase">portfolio</div>
+			<div class="title portfolio-title">portfolio</div>
 			<div class="portfolio-photos">
 				<div class="photo"><img src="img/photos/photo1.jpg" alt="jwood"></div>
 				<div class="photo"><img src="img/photos/photo2.jpg" alt="jwood"></div>
@@ -84,28 +112,50 @@
 			</div>
 		</div>
 
-		<footer class="scroll uppercase">
-			do you want to see it with yout own eyes? scroll!
+		<footer class="scroll scroll-big">
+			<span>do you want to see it with yout own eyes? scroll!</span>
 			<a href="#contact"><i class="fa fa-angle-double-down"></i></a>
+		</footer>
+		<footer class="scroll scroll-small">
+			<a href="#contact">
+				<span class="fa-stack fa-1x">
+					<i class="fa fa-circle-thin fa-stack-2x"></i>
+					<i class="fa fa-angle-double-down fa-stack-1x"></i>
+				</span></a>
 		</footer>
 	</section>
 
 	<section class="s-contact" id="contact">
 		<div class="contact">
-			<div class="contact-data uppercase">
+			<div class="contact-data">
 				<div class="contact-data-descr">mail:</div>
-				<div class="contact-data-mail title"><a href="mail:jason@wood.com">jason@wood.com</a></div>
+				<div class="contact-data-cont"><a href="mail:jason@wood.com">jason@wood.com</a></div>
 				<div class="contact-data-descr">phone:</div>
-				<div class="contact-data-tel"><a href="tel:4444444444">+44 444 444 444</a></div>
+				<div class="contact-data-cont"><a href="tel:4444444444">+44 444 444 444</a></div>
 				<div class="contact-data-descr">social media:</div>
+
 				<div class="contact-data-links">
-					<a href="http://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-					<a href="http://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href="http://www.facebook.com">
+						<span class="fa-stack fa-2x">
+							<i class="fa fa-circle-thin fa-stack-2x"></i>
+							<i class="fa fa-facebook fa-stack-1x"></i>
+						</span></a>
+
+					<a href="http://www.twitter.com">
+						<span class="fa-stack fa-2x">
+							<i class="fa fa-circle-thin fa-stack-2x"></i>
+							<i class="fa fa-twitter fa-stack-1x"></i>
+						</span></a>
+
+					<a href="http://www.instagram.com">
+						<span class="fa-stack fa-2x">
+							<i class="fa fa-circle-thin fa-stack-2x"></i>
+							<i class="fa fa-instagram fa-stack-1x"></i>
+						</span></a>
 				</div>
 			</div>
 		</div>
-		<footer class="contact-footer uppercase"><span>designed by pavel szymankiewich</span></footer>
+		<footer class="contact-footer">designed by pavel szymankiewich</footer>
 	</section>
 	
 	<link rel="stylesheet" href="css/main.min.css">
