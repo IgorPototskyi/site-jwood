@@ -2,10 +2,46 @@
 
 /*==========  Desktop First  ==========*/
 
+@media only screen and (max-width : 1500px)
+	.title
+		font-size: 50px
+
+	.scroll
+		font-size: 14px
+	
+	.s
+		&-home
+			.home-content
+				img
+					height: 40vh
+
+		&-portfolio
+			.portfolio-title
+				margin: 30px 0
+			.portfolio-photos
+				img
+					width: 210px
+					height: 188px
+
+		&-contact
+			.contact-data
+				&-descr
+					font-size: 26px
+				&-cont
+					font-size: 44px
+			
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	.title
 		font-size: 50px
+
+	.s
+		&-portfolio
+			.portfolio-photos
+				img
+					width: 187px
+					height: 166px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -15,7 +51,7 @@
 		// height: 100%
 	
 	.scroll
-		font-size: 14px
+		// font-size: 14px
 		a
 			font-size: 32px
 
@@ -31,6 +67,7 @@
 
 	.navbar-custom
 		background-color: rgba(#000,.8)
+		height: auto
 
 	section
 		padding-top: 70px

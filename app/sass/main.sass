@@ -74,11 +74,12 @@ body
 	text-align: center
 	font-size: 24px
 	border-bottom: 1px solid $accent
+	// height: 80px
 	> li
 		float: none
 		display: inline-block
 		text-transform: uppercase
-		padding: 25px 0
+		padding: 15px 0
 		a
 			color: #fff
 			transition: color .2s ease
@@ -91,6 +92,7 @@ body
 
 .navbar-custom
 	background-color: rgba(#000,.2)
+	height: 80px
 
 .navbar-toggle
 	border: 1px solid #fff
@@ -215,8 +217,8 @@ section
 				text-align: center
 				margin: 50px 0
 			&-photos
-				width: 90%
-				margin: 0 auto
+				width: 100%
+				// margin: 0 auto
 				text-align: center
 				display: flex
 				flex-flow: row wrap
@@ -225,9 +227,13 @@ section
 					width: 279px
     				height: 250px
 					margin: 20px
-					transition: transform .3s ease-in
+					// transition: transform .3s ease-in
+					// &:hover
+					// 	transform: scale(1.1)
+					opacity: .8
+					transition: opacity .3s ease-in
 					&:hover
-						transform: scale(1.1)
+						opacity: 1
 
 	&-contact
 		color: $dark
@@ -256,7 +262,7 @@ section
 						&:hover
 							color: $hover
 		.contact-footer
-			padding-bottom: 30px
+			padding-bottom: 20px
 			width: 100%
 			font-size: 18px
 			color: $hover
@@ -267,7 +273,7 @@ section
 				width: 94%
 				height: 1px
 				background: $hover
-				margin: 0 auto 30px
+				margin: 0 auto 20px
 
 
 @import "media"
